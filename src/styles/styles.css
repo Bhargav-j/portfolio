@@ -1,0 +1,71 @@
+/* styles.css */
+/* Hide scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+.max-h-custom::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #f00; /*red border*/
+    background-color: #ff0; /*yellow background */
+  }
+  50% {
+    border-color: #0f0; /*green border */
+    background-color: #0ff; /*cyan background */
+  }
+  75% {
+    border-color: #00f; /*blue border */
+    background-color: #f0f; /*magenta background */
+  }
+  100% {
+    border-color: #f00; /*blue border */
+    background-color: #ff0; /*magenta background */
+  }
+}
+
+.animate-border-color {
+  animation: changeBorderColor 15s infinite; /* Change every 3 seconds */
+}
+
+.animate-color {
+  animation: changeBorderColor 10s infinite; /* Change every 3 seconds */
+}
+
+@keyframes movingGradient {
+  0% {
+    background-position: 0% 0%; /* Start from top-left corner */
+  }
+  100% {
+    background-position: 100% 100%; /* Move to bottom-right corner */
+  }
+}
+
+.animate-moving-gradient {
+  animation: movingGradient 7s linear infinite; /* Adjust duration as needed */
+  background: linear-gradient(45deg, #f00, #0f0, #00f, #f00); /* Define linear gradient */
+  background-size: 400% 400%; /*Increase size for smooth transition*/
+}
+
