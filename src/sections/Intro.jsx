@@ -78,7 +78,7 @@ const Intro = ({ introRef, screenWidth }) => {
             </span>
           </a>
         </div>
-        <a href="../../public/static/Jeereddy_Bhargav_Resume.pdf" download>
+        <a href="/portfolio/static/media/Jeereddy_Bhargav_Resume.pdf" download>
           <button className="py-4 px-6 text-xl font-semibold border bg-slate-400 rounded-md hover:-translate-y-0.5 hover:bg-green-500">
             Download CV
           </button>
