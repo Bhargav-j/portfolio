@@ -38,13 +38,13 @@ export const ProjectCard = ({ projectDetails }) => {
         </div>
       </div>
       <div className="p-4">
-        <h1 className="text-center font-bold sm:text-2xl text-subheadingsm pb-2">
+        <h1 className="text-center font-bold sm:text-2xl text-subheadingsm">
           {projectDetails.title}
         </h1>
-        <h3 className="text-center text-base font-semibold pb-2 leading-tight">
+        <h3 className="text-center text-base pt-5 font-semibold leading-tight">
           {projectDetails.features}
         </h3>
-        <p className="text-justify">{projectDetails.info}</p>
+        <p className="text-justify pt-5">{projectDetails.info}</p>
       </div>
     </section>
   );

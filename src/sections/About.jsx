@@ -32,7 +32,7 @@ const About = ({aboutRef}) => {
   // console.log(Object.keys(subHeading_dataset))
 
   return (
-    <section className="sm:flex min-h-custom gap-5" ref={aboutRef} id="about">
+    <section className="sm:flex min-h-custom gap-5 mt-5" ref={aboutRef} id="about">
       <div className="flex-initial sm:w-1/3 w-full sm:max-h-[35rem] max-h-[20rem] py-6 overflow-hidden rounded-lg">
         <img
           className="w-full sm:h-full sm:object-cover object-cover rounded-lg h-[20rem]"
@@ -50,11 +50,11 @@ const About = ({aboutRef}) => {
           ensuring seamless user experiences and robust application performance.{" "}
         </p>
 
-        <ul className="flex gap-10 sm:text-xl font-semibold pb-6">
+        <ul className="flex gap-10 sm:text-xl font-semibold items-center">
           {subHeadings.map((title) => {
             return (
               <li
-                className= {`cursor-pointer ${selectedTitle === title && 'text-green-500'} transition hover:scale-110 duration-150`}
+                className= {`cursor-pointer ${selectedTitle === title && 'text-green-500 bg-slate-200'} duration-150 p-3 rounded-t-xl`}
                 key={title}
                 onClick={() => setselectedTitle(title)}
               >
@@ -73,14 +73,14 @@ const About = ({aboutRef}) => {
           })}
         </ul>
 
-        <section>
+        <section className="bg-slate-200 px-3 rounded-b-xl">
           {Object.keys(subHeading_dataset[selectedTitle]).map((subTitle) => {
             const subDataset = subHeading_dataset[selectedTitle];
             const subContent = subDataset[subTitle];
             return (
-              <div key={subTitle} className="pb-4 md:text-lg">
-                <h1 className="font-semibold underline">{subTitle}</h1>
-                <p>{subContent}</p>
+              <div key={subTitle} className="pb-2 md:text-lg">
+                <h1 className="font-semibold underline ">{subTitle}</h1>
+                <p className="text-justify">{subContent}</p>
               </div>
             );
           })}
