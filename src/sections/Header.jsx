@@ -46,7 +46,7 @@ const Header = ({ scrollToSection, allrefs }) => {
   }, [allrefs]);
 
   return (
-    <header className="relative h-16">
+    <header className="relative h-16 ">
       <nav className="flex justify-between items-center h-full px-20">
         <div className="text-3xl font-bold">BHARGAV</div>
         <div>

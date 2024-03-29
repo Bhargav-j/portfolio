@@ -18,7 +18,7 @@ const Intro = ({ introRef, screenWidth }) => {
     >
       <section className="pt-32">
         <h1 className="font-bold sm:text-headinglg text-headingsm pb-6">
-          MERN Stack Junior Web Developer
+          MERN Stack Web Developer
         </h1>
         <p className="font-bold sm:text-4xl text-2xl pb-2">
           Hi, I'm{" "}

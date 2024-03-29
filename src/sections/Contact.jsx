@@ -16,13 +16,13 @@ const Contact = ({ contactRef }) => {
           Would you love to learn more about my projects
         </p>
         <div className="sm:flex justify-evenly text-xl">
-          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-20">
+          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-10">
             <div className="sm:w-28 sm:h-28 w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-6">
               <FontAwesomeIcon icon={faPhone} size="2xl" />
             </div>
             <p className="text-orange-400">+91 8919471367</p>
           </div>
-          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-20">
+          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-10">
             <div className="sm:w-28 sm:h-28 w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-6">
               <a
                 className="hover:scale-110"
@@ -37,7 +37,7 @@ const Contact = ({ contactRef }) => {
             </div>
             <p className="text-orange-400">Gmail</p>
           </div>
-          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-20">
+          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-10">
             <div className="sm:w-28 sm:h-28 w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-6">
               <a
                 className="hover:scale-110"
@@ -52,7 +52,7 @@ const Contact = ({ contactRef }) => {
             </div>
             <p className="text-orange-400">GitHub</p>
           </div>
-          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-20">
+          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-10">
             <div className="sm:w-28 sm:h-28 w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-6">
               <a
                 className="hover:scale-110"
@@ -67,7 +67,7 @@ const Contact = ({ contactRef }) => {
             </div>
             <p className="text-orange-400">LinkedIn</p>
           </div>
-          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-20">
+          <div className="flex sm:block justify-start items-center gap-5 sm:ml-0 ml-10">
             <div className="sm:w-28 sm:h-28 w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center mb-6">
               <a
                 className="hover:scale-110"

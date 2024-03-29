@@ -60,7 +60,7 @@ const Services = ({servicesRef}) => {
               return (
                 <div key={id}>
                   <h1 className="text-xl font-semibold pb-6 underline">{eachObject}</h1>
-                  <div className="flex flex-wrap pb-6">
+                  <div className="flex flex-wrap pb-6 gap-3 sm:gap-0">
                     {Object.keys(subObject).map((each) => {
                       const content = subObject[each];
                       return (

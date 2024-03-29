@@ -63,9 +63,12 @@
   }
 }
 
-.animate-moving-gradient {
-  animation: movingGradient 7s linear infinite; /* Adjust duration as needed */
-  background: linear-gradient(45deg, #f00, #0f0, #00f, #f00); /* Define linear gradient */
-  background-size: 400% 400%; /*Increase size for smooth transition*/
+
+@media only screen and (min-width:  700px){
+  .animate-moving-gradient {
+    animation: movingGradient 7s linear infinite; /* Adjust duration as needed */
+    background: linear-gradient(45deg, #f00, #0f0, #00f, #f00); /* Define linear gradient */
+    background-size: 400% 400%; /*Increase size for smooth transition*/
+  }
 }
 

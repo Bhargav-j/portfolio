@@ -1,4 +1,9 @@
-import { faBars, faChevronUp, faCircleArrowUp } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faChevronUp,
+  faCircleArrowUp,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 
@@ -48,20 +53,32 @@ const HeaderSM = ({ scrollToSection, allrefs }) => {
   }, [allrefs]);
 
   return (
-    <header className="relative pt-5 ">
-      <nav>
+    <header className="relative pt-5 border-b-4 border-slate-200">
+      <nav className="relative">
         <section className="flex justify-between items-center pr-5">
           <div className="text-3xl font-bold">BHARGAV</div>
-          {!showMenu ? (
+          <div
+            onClick={() => setShowMenu(!showMenu)}
+            className="h-full duration-150 ease-in-out transition-height"
+          >
+            {!showMenu ? (
+              <FontAwesomeIcon icon={faBars} size="xl" />
+            ) : (
+              <FontAwesomeIcon icon={faXmark} size="xl" />
+            )}
+          </div>
+          {/* {!showMenu ? (
             <div onClick={() => setShowMenu(!showMenu)} className="h-full duration-150 ease-in-out transition-height">
               <FontAwesomeIcon icon={faBars} size="xl" />
             </div>
           ) : (
             ""
-          )}
+            // <FontAwesomeIcon icon="fa-solid fa-xmark" />
+          )} */}
         </section>
         {showMenu ? (
-          <div className="flex items-end h-full flex-col justify-center pr-5">
+          <div className="absolute top-full left-0 w-full bg-white z-50 py-4 border-b-4 border-slate-200 transition-all duration-500 ease-in-out">
+          {/* <div className="flex items-end h-full flex-col justify-center pr-5 duration-150 ease-in-out transition-height"> */}
             <ul className="flex text-xl font-semibold flex-col gap-4">
               <li
                 onClick={() => scrollToSection(introRef)}
@@ -126,9 +143,9 @@ const HeaderSM = ({ scrollToSection, allrefs }) => {
                 />
               </li>
             </ul>
-            <div onClick={() => setShowMenu(!showMenu)} className="pr-5 pt-2">
+            {/* <div onClick={() => setShowMenu(!showMenu)} className="pr-5 pt-2">
               <FontAwesomeIcon icon={faChevronUp} size="xl" />
-            </div>
+            </div> */}
           </div>
         ) : (
           ""
